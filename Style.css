@@ -6,6 +6,11 @@ body{
     align-items: center;
 }
 
+h1 {
+    margin: 50px;
+}
+
+
 #gray {
     width: 350px;
     height: 150px;

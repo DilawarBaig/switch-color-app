@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch color app</title>
+    <link rel="stylesheet" href="/Style.css">
+  </head>
+  <body>
+    <main>
+        <h1 >Color Switch App</h1>
+        <div>
+
+            <span class="button" id="gray">gray</span>
+            <span class="button" id="white">white</span>
+            <span class="button" id="blue">blue</span>
+            <span class="button" id="yellow">yellow</span>
+        </div>
+    </main>
+  </body>
+  <script>
+    const buttons = document.querySelectorAll(".button");
+    const body = document.querySelector("body");
+    console.log(buttons);
+
+    buttons.forEach((button) => {
+      console.log(button);
+      button.addEventListener("click", (event) => {
+        console.log(event);
+        console.log(event.target.id);
+        if (event.target.id === "gray") {
+          body.style.backgroundColor = "gray";
+        } 
+        else if (event.target.id === 'white') {
+          body.style.backgroundColor = "white";
+        }
+        else if(event.target.id === 'blue'){
+            body.style.backgroundColor = 'blue'
+        }
+        else if(event.target.id === "yellow"){
+            body.style.backgroundColor = 'yellow'
+        }
+        else{
+            alert("Sorry? you don't have any other choice other then clicking these 4 buttons. ")
+        }
+      });
+    });
+  </script>
+</html>

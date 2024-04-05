@@ -1,0 +1,44 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gray {
+    width: 350px;
+    height: 150px;
+    padding: 25px;
+    border: 1px solid black;
+    background-color: gray;
+  }
+
+
+  #white {
+    width: 350px;
+    height: 150px;
+    padding: 25px;
+    border: 1px solid black;
+    background-color: #fff;
+    
+
+
+
+  }
+
+  #blue {
+    width: 350px;
+    height: 150px;
+    padding: 25px;
+    border: 1px solid black;
+    background-color:  blue;
+  }
+
+  #yellow {
+    width: 350px;
+    height: 150px;
+    padding: 25px;
+    border: 1px solid black;
+    background-color: yellow;
+  }
